@@ -236,6 +236,8 @@
     <span class="ticker-item">PowerShell &amp; Terraform <span class="sep">+</span></span>
     <span class="ticker-item">NIST 800-53 / ISO 27001 <span class="sep">+</span></span>
     <span class="ticker-item">Cloud Migration &amp; Security Posture <span class="sep">+</span></span>
+    <span class="ticker-item">CI/CD &amp; DevOps Pipelines <span class="sep">+</span></span>
+    <span class="ticker-item">Docker &amp; Containerization <span class="sep">+</span></span>
     <span class="ticker-item">Azure Cloud Security <span class="sep">+</span></span>
     <span class="ticker-item">Microsoft Sentinel <span class="sep">+</span></span>
     <span class="ticker-item">KQL &amp; Log Analytics <span class="sep">+</span></span>
@@ -347,6 +349,41 @@
 
       <div class="proj-row reveal">
         <div class="proj-left">
+          <div class="proj-tags-row"><span class="ptag active">DevOps</span><span class="ptag">CI/CD</span><span class="ptag">Docker</span><span class="ptag">AWS</span></div>
+          <div class="proj-date">&bull; 2025 &mdash; Present</div>
+          <div class="proj-title">Cloud DevOps<br><em>Platform Lab</em></div>
+          <div class="proj-desc">Built an enterprise-grade cloud platform lab simulating a real DevOps engineering environment. Provisioned reusable AWS infrastructure modules using Terraform, built end-to-end CI/CD pipelines with GitLab CI, containerized applications using Docker, and implemented monitoring and alerting using CloudWatch and AWS SNS. Practiced disaster recovery workflows including backup validation, failover testing, and RTO/RPO documentation — mirroring production Cloud Common Platform responsibilities.</div>
+          <div class="proj-tech">
+            <span class="tech-pill">Terraform</span>
+            <span class="tech-pill">AWS</span>
+            <span class="tech-pill">GitLab CI/CD</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">CloudFormation</span>
+            <span class="tech-pill">CloudWatch</span>
+            <span class="tech-pill">IAM</span>
+          </div>
+        </div>
+        <div class="proj-right">
+          <div class="terminal-bar"><div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div></div>
+          <div class="terminal-body">
+            <div class="cmd"># GitLab CI/CD Pipeline</div>
+            <div class="out">stages: [validate, plan, apply, test]</div>
+            <br>
+            <div class="cmd">$ terraform init &amp;&amp; terraform validate</div>
+            <div class="ok">&#10003; Configuration is valid</div>
+            <div class="cmd">$ terraform plan -out=tfplan</div>
+            <div class="ok">&#10003; Plan: 18 to add, 0 to change</div>
+            <br>
+            <div class="cmd">$ docker build -t platform-api:v1.2 .</div>
+            <div class="ok">&#10003; Image built &amp; pushed to ECR</div>
+            <div class="cmd">$ aws ecs deploy --cluster prod</div>
+            <div class="ok">&#10003; Deployment successful. 0 errors.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-row reveal">
+        <div class="proj-left">
           <div class="proj-tags-row"><span class="ptag active">Security</span><span class="ptag">Sentinel</span><span class="ptag">IaC</span></div>
           <div class="proj-date">&bull; 2025 &mdash; Present</div>
           <div class="proj-title">Azure Cloud Security<br><em>&amp; Sentinel Lab</em></div>
@@ -440,6 +477,10 @@
       <div class="tool-card reveal"><div class="tool-icon">&#128232;</div><div class="tool-name">Exchange Online</div></div>
       <div class="tool-card reveal d1"><div class="tool-icon">&#128039;</div><div class="tool-name">Linux</div></div>
       <div class="tool-card reveal d2"><div class="tool-icon">&#128221;</div><div class="tool-name">Splunk</div></div>
+      <div class="tool-card reveal"><div class="tool-icon">&#128249;</div><div class="tool-name">Docker</div></div>
+      <div class="tool-card reveal d1"><div class="tool-icon">&#128295;</div><div class="tool-name">GitLab CI/CD</div></div>
+      <div class="tool-card reveal d2"><div class="tool-icon">&#9878;&#65039;</div><div class="tool-name">CloudWatch</div></div>
+      <div class="tool-card reveal"><div class="tool-icon">&#128736;&#65039;</div><div class="tool-name">CloudFormation</div></div>
     </div>
   </div>
 </section>
@@ -471,7 +512,7 @@
       <div class="contact-roles reveal">
         <span>Azure Cloud Security Engineer</span>
         <span class="sep"></span>
-        <span>Sentinel &amp; IAM</span>
+        <span>Cloud DevOps &amp; Platform Engineering</span>
         <span class="sep"></span>
         <span>Atlanta, GA</span>
       </div>
